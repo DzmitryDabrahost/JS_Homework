@@ -9,7 +9,7 @@ function Cat(name) {
         console.log('Насыпаем в миску ' + formatFoodAmount() + ' корма');
     };
 
-    formatFoodAmount = function () {
+    var formatFoodAmount = function () {
         return foodAmount + ' гр.';
     }
 }
@@ -30,7 +30,7 @@ function Cat(name) {
         console.log('Насыпаем в миску ' + formatFoodAmount() + ' корма');
     };
 
-    formatFoodAmount = function () {
+    function formatFoodAmount() {
         return foodAmount + ' гр.';
     };
 
@@ -44,7 +44,6 @@ function Cat(name) {
 
         foodAmount = amount;
 
-        return formatFoodAmount();
     }
 }
 
