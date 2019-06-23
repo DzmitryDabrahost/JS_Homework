@@ -1,0 +1,140 @@
+header {
+    background-color: #2d313d;
+    width: 100%;
+}
+
+.header {
+    max-width: 960px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &_logo {
+        display: flex;
+    
+        &-img {
+            width: 32px;
+            height: 20px;
+            margin: 18px 0 18px 6px;
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+        & a {
+            color: #727989;
+            text-decoration: none;
+            
+        }
+
+        & i {
+            font-size: 18px;
+            color: #727989;
+            padding-right: 32px;
+            margin: 18px 0 18px 6px;
+            cursor: pointer;
+
+            &:last-child {
+                padding-right: 5px;
+            }
+        }
+
+        & img {
+            padding: 0 24px 0 10px;
+        }
+    }
+
+    &-city {
+        border-bottom: dashed 1px;
+        margin: 0 6px 0 22px;
+    }
+
+    &_min {
+        color: white;
+        display: none;
+        text-align: center;
+
+        &-logo {
+            margin-left: 35px;
+            position: relative;
+            top: 16px;
+        }
+
+        &-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 4px;
+            margin-right: 45px;
+            position: relative;
+            top: 16px;
+        }
+
+        & span {
+            font: 36px Arial;
+            margin: 0 65px 0 50px;
+        }
+        
+        & i {
+            font-size: 36px;
+            padding: 32px 0;
+        }
+    }
+}
+
+.nav {
+    background-color: #646d81;
+    width: 100%;
+
+    & ul {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    & li {
+        padding: 7px 0 12px;
+        border-top: solid #646d81 5px;
+    }
+
+    & li:hover {
+        transition-delay: .10s;
+        border-top: solid white 5px;
+    }
+    
+    & li + li {
+        margin-left: 26px;
+    }
+
+    & a {
+    text-decoration: none;
+    color: white;
+    font: 14px;
+    font-family: Arial;
+    }
+}
+.mobileMenu {
+    background-color:#2d313d;
+    display: none;
+    width: 150px;
+    z-index: 10000;
+    top: 85px;
+    border: solid black 2px;
+    font: 26px Arial;
+    position: absolute;
+}
+.mobileMenu ul {
+    display: block;
+}
+.mobileMenu ul li {
+    padding: 3px 10px;
+}
+.mobileMenu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.mobileMenu ul li a:hover {
+    color: grey;
+}

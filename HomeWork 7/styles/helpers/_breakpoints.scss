@@ -1,0 +1,164 @@
+@media screen and (max-width: 780px) {
+    .sidebar_right-form-items span {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header {
+        display: none;
+    }
+
+    .header_min {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .sidebar_left {
+        display: none;
+    }
+
+    .sidebar_right {
+
+        & h1 {
+            font-size: 50px;
+            padding: 50px 75px 40px 85px;
+            text-align: center;
+
+            & span {
+                border-bottom: dashed 2px;
+            }
+        }
+
+        &-form {
+            display: none;
+
+            &-min {
+                display: block;
+            }
+        }
+
+        &-posts {
+            font-size: 24px;
+            margin: 60px;
+        }
+    }
+    .title {
+        font-size: 28px;
+    }
+    .text {
+        font-size: 26px;
+    }
+    .member {
+        margin-left: 10px;
+    }
+    .comments {
+        margin-right: 0;
+    }
+    .buttons {
+        margin: 84px 0 89px;
+
+        & a:first-child {
+            padding: 27px 40px 27px 30px;
+            font-size: 22px;
+        }
+
+        & a:last-child {
+            padding: 27px 30px 27px 40px;
+            font-size: 22px;
+        }
+    }
+
+    .buttons a .fa-angle-left {
+        padding-right: 30px;
+    }
+    .buttons a .fa-angle-right {
+        padding-left: 30px;
+    }
+    .footer_menu {
+        padding: 30px 0;
+        font-size: 18px;
+        font-family: Arial;
+        justify-content: center;
+    }
+    .footer_info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .header_min i:first-child {
+        padding-left: 10px;
+        font-size: 20px;
+        color: grey;
+        float: left;
+    }
+    .header_min i:last-child {
+        font-size: 20px;
+        padding: 32px 0;
+    }
+    .header_min-logo {
+        width: 60px;
+        margin-left: 15px;
+    }
+    .header_min span {
+        font-size: 20px;
+        margin: 0 13px;
+    }
+    .header_min-photo {
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+    }
+    .sidebar_right {
+
+        & h1 {
+            font-size: 34px;
+            padding: 25px 10px;
+            & span {
+                margin-left: 0;
+            }
+        }
+
+        &-form-min {
+            font-size: 28px;
+            padding: 15px 40px;
+        }
+        &-posts {
+            font-size: 14px;
+            margin: 30px 20px;
+        }
+    }
+    .comments {
+        float: none;
+        display: block;
+        padding-top: 5px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .buttons {
+        margin: 60px 0 70px;
+        & a:first-child {
+            padding: 17px 30px 17px 20px;
+        }
+        & a:last-child {
+            padding: 17px 20px 17px 30px;
+        }
+    }
+    .buttons a .fa-angle-left {
+        padding-right: 15px;
+    }
+    .buttons a .fa-angle-right {
+        padding-left: 15px;
+    }
+    
+    .mobileMenu {
+        top: 75px;
+        font-size: 20px;
+        width: 130px;
+    }
+}
