@@ -45,3 +45,16 @@ areAnagrams('кот', 'отко');
 
 // не понял как делать(((( решение есть, но я его совсем не понимаю....
 // надо уделять больше внимания учёбе
+
+function divideArr(arr, subArr) {
+    var newArr = [];
+
+    for (var i = 0; i <arr.length; i += subArr) {
+        newArr.push(arr.slice(i, i + subArr));
+    }
+
+    return newArr;
+}
+
+divideArr([1, 2, 3, 4], 2);
+
